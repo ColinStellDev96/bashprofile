@@ -1,15 +1,25 @@
-port PS1="\W @\h [\u] #"
+PS1="\W @\h [\u] #"
 echo 'Welcome Back, Colin'
 
+#Git
+alias gin='git init'
+alias gadd='git add -A'
+alias gcom='git commit -m'
+alias gpush='git push origin master'
+alias grem='git remote add origin'
 
-alias gi='git init'
-alias gia='git add -A'
-alias gcm='git commit -m'
-alias gpom='git push origin master'
+#Text-Editor
 alias atom='atom cd'
-alias nanob='nano .bash_profile'
 
-alias ls='ls -GFh'
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+#Bash Profile Editing
+alias nanob='nano .bash_profile cd'
+
+#Creating Folders/Files
+alias dir='mkdir'
+alias new="touch"
+
+#Directories
+alias home='cd ~'
+alias ..2='cd .. /..'
+alias ..3='cd .. /.. /..'
+alias ..4='cd .. /.. /.. /..'
